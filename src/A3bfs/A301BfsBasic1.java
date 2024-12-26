@@ -20,6 +20,7 @@ public class A301BfsBasic1 {
             myList.get(a[1]).add(a[0]);
 
         }
+        System.out.println(myList);
         for (List<Integer> a : myList) {
             a.sort(Comparator.naturalOrder());
 
