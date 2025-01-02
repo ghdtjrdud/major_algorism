@@ -31,13 +31,11 @@ public class A201DfsBasic1 {
 
     }
     static void dfs(List<List<Integer>> adjList, int start, boolean[] visited) {
-        System.out.println(start);
         visited[start] = true;
-        if (visited[start] == false) {
-            for (int a : adjList.get(start)) {
-                if (!visited[a]) {
-                    dfs(adjList,a,visited);
-                }
+        System.out.println(start);
+        for (int a : adjList.get(start)) {
+            if (!visited[a]) {
+                dfs(adjList,a,visited);
             }
         }
     }
